@@ -1,3 +1,3 @@
 Hello,
 
-This is my vanilliaJS examples repository
+This is my vanillaJS examples repository
