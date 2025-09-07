@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>map() Example</title>
+    </head>
+    <body>
+
+        <h2>Fruits List</h2>
+        <ul id="fruit-list"></ul>
+
+    </body>
+    <script>
+        const fruits = ["Apple", "Banana", "Cherry"];
+
+        //.map() is a method for arrays, it creates a new array by applying a function to each elemetn of the original array.
+        const fruitsItems = fruits.map(fruit => {
+            return `<li>${fruit}</li>`;
+        })
+
+        //The following line changes the content of the <ul> element with id="fruit-list"
+        //getElementById is a method, innerHTML is a property
+        //innerHTML property can be used to change any HTML element, inluding <html> and <body>
+        // The join() method also joins all array elements into a string, you can specify the seperator
+        document.getElementById("fruit-list").innerHTML = fruitsItems.join("");
+        
+    </script>
+</html>
